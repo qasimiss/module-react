@@ -1,7 +1,22 @@
 .cards {
     height: calc(100vh - 200px);
+    // margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    // width: 100%;
     max-width: 1450px;
     flex-wrap: wrap;
     overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+        &-track {
+            background: black;
+        }
+        &-thumb {
+            background: grey;
+            :hover {
+                background: #D58C51;
+            }
+        }
+      }
 }
