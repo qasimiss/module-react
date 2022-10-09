@@ -14,6 +14,8 @@
                 color: #D58C51;
                 cursor: pointer;
             }
+            & .button--circle {
+                margin-right: 0;}
         }
         &__img {
             width: 132px;
@@ -43,6 +45,7 @@
         justify-content: space-between;
     }
     & .container {
+        padding-left: 70px;
         & .header__title {
             margin-right: 334px;
             margin-bottom: 38px;
