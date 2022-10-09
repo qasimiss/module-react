@@ -1,14 +1,17 @@
 import './app.scss';
-import Header from '../app-header/header';
-import Cards from '../cards';
+import {Routes, Route} from "react-router-dom";
+import NotFound from '../../pages/404';
+import ShowCase from '../../pages/showcase';
+import Trash from '../../pages/trash';
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Header />
-        <Cards />
-      </div>
+      <Routes>
+        <Route path="/" element={<ShowCase/>} ></Route>
+        <Route path="/trash" element={<Trash/>} ></Route>
+        <Route path="*" element={<NotFound/>} ></Route>
+      </Routes>
     </div>
   );
 }
