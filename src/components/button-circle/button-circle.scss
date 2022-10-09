@@ -1,0 +1,17 @@
+.button--circle {
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.3s ease;
+    &:hover {
+        border-color: #D58C51;
+        cursor:pointer;
+        & path {
+            transition: 0.3s ease;
+            fill: #D58C51;
+        }
+    }
+}

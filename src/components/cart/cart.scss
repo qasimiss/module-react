@@ -1,0 +1,40 @@
+.trash {
+    // height: 740px;
+    & .cart {
+        height: 530px;
+        overflow-y: auto;
+    } 
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    & .container {
+        & .header__title {
+            margin-right: 334px;
+            margin-bottom: 38px;
+        }
+    }
+    & .button--circle {
+        margin-right: 63px;
+    }
+    &__footer {
+        height: 89px;
+        border-top: 1px solid #D58C51;
+    }
+
+    &__order {
+        color: white;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #D58C51;
+    }
+}

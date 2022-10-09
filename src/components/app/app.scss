@@ -1,15 +1,16 @@
-* {
-    font-family: 'Montserrat', sans-serif;
-}
-body {
-    background-color: #161516;
-}
 .container {
     margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
     padding: 51px 40px 0 70px;
-
+    &--min {
+        max-width: 860px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 89px;
+    }
 }
 
 h1, h2 {

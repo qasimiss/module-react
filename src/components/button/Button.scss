@@ -1,0 +1,28 @@
+.button {
+    width: 200px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #D58C51;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+    &--light {
+        color: black;
+        background-color: transparent;
+        &:hover {
+            cursor: pointer;
+            background-color: #D58C51;
+        }
+    }
+    &--dark {
+        background-color: transparent;
+        color: #D58C51;
+        &:hover {
+            cursor: pointer;
+            color: black;
+            background-color:#D58C51;
+        }
+    }
+}

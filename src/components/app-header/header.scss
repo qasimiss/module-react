@@ -8,17 +8,15 @@
         font-size: 31px;
         text-transform: uppercase;
         margin-bottom: 81px;
+        color: #FFFFFF;
     }
 
-    &__logo {
+    &__button {
         flex-shrink: 0;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: #D58C51;
-        background-image: url("./logo.svg");
-        background-repeat: no-repeat;
-        background-position: center center;
         cursor: pointer;
     }
 

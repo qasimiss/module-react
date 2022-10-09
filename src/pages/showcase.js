@@ -4,7 +4,7 @@ import Cards from "../components/cards";
 function ShowCase() {
   return (
       <div className="container">
-        <Header />
+        <Header title="наша продукция"/>
         <Cards />
       </div>
   );

@@ -1,7 +1,7 @@
 export const products = [
     {
         id: 1,
-        url: "images/1.png",
+        url: "images/content/1.png",
         title:"Устрицы по рокфеллеровски",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры",
         price:"2 700",
@@ -9,7 +9,7 @@ export const products = [
     },
     {
         id: 2,
-        url: "images/2.png",
+        url: "images/content/2.png",
         title:"Свиные ребрышки на гриле с зеленью",
         descr:"Не следует, однако забывать, что реализация намеченных плановых",
         price:"1 600",
@@ -17,7 +17,7 @@ export const products = [
     },
     {
         id: 3,
-        url: "images/3.png",
+        url: "images/content/3.png",
         title:"Креветки по-королевски в лимонном соке",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому кругу",
         price:"1 820",
@@ -25,7 +25,7 @@ export const products = [
     },
     {
         id: 4,
-        url: "images/1.png",
+        url: "images/content/1.png",
         title:"Устрицы по рокфеллеровски",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры",
         price:"2 700",
@@ -33,7 +33,7 @@ export const products = [
     },
     {
         id: 5,
-        url: "images/1.png",
+        url: "images/content/1.png",
         title:"Устрицы по рокфеллеровски",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры",
         price:"2 700",
@@ -41,7 +41,7 @@ export const products = [
     },
     {
         id: 6,
-        url: "images/2.png",
+        url: "images/content/2.png",
         title:"Свиные ребрышки на гриле с зеленью",
         descr:"Не следует, однако забывать, что реализация намеченных плановых",
         price:"1 600",
@@ -49,7 +49,7 @@ export const products = [
     },
     {
         id: 7,
-        url: "images/3.png",
+        url: "images/content/3.png",
         title:"Креветки по-королевски в лимонном соке",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому кругу",
         price:"1 820",
@@ -57,7 +57,7 @@ export const products = [
     },
     {
         id: 8,
-        url: "images/1.png",
+        url: "images/content/1.png",
         title:"Устрицы по рокфеллеровски",
         descr:"Значимость этих проблем настолько очевидна, что укрепление и развитие структуры",
         price:"2 700",
