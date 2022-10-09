@@ -28,7 +28,6 @@ function Trash() {
                     text="Выйти"
                     />
                 </header>
-
                 <Cart />
             </div>
 

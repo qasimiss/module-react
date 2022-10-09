@@ -3,6 +3,40 @@
     & .cart {
         height: 530px;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 33px;
+        // align-items: space-between;
+        &__item {
+            display: flex;
+            align-items: center;
+            &:hover * {
+                color: #D58C51;
+                cursor: pointer;
+            }
+        }
+        &__img {
+            width: 132px;
+            height: 132px;
+            margin-right: 98px;
+            // margin-bottom: 33px;
+        }
+        &__title {
+            color:white;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 21px;
+            margin-right: auto;
+            width: 310px;
+        }
+        &__price {
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            margin-right: 20px;
+        }
+        
     } 
     &__header {
         display: flex;
@@ -20,6 +54,12 @@
     &__footer {
         height: 89px;
         border-top: 1px solid #D58C51;
+        & .container--min {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 89px;
+        }
     }
 
     &__order {
