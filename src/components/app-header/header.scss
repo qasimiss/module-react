@@ -1,13 +1,11 @@
 .header {
-    
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 75px;
     &__title {
         font-size: 31px;
         text-transform: uppercase;
-        margin-bottom: 81px;
         color: #FFFFFF;
     }
 
@@ -18,10 +16,13 @@
         border-radius: 50%;
         background-color: #D58C51;
         cursor: pointer;
+        margin-right: 22px;
     }
 
     &__cart {
         display: flex;
+        align-items:center;
+        margin-top: -4px;
     }
     
     &__goods {

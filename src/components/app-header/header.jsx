@@ -1,5 +1,6 @@
 import "./header.scss";
 import {Link} from "react-router-dom";
+import Button from "../button/button";
 
 const Header = ({title}) => {
   return (
@@ -14,6 +15,10 @@ const Header = ({title}) => {
                     </svg>
                   </button>
                 </Link>
+                <Button 
+                    color="dark"
+                    text="Выйти"
+                />
             </div>
         </header>
   );
