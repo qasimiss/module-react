@@ -2,12 +2,13 @@ import "./header.scss";
 import {Link} from "react-router-dom";
 import Button from "../button/button";
 
-const Header = ({title}) => {
+const Header = ({title, items, sum}) => {
+  // let [sum, items] = useBasket()
   return (
         <header className="header">
             <h1 className="header__title">{title}</h1>
             <div className="header__cart">
-                <div className="header__goods">3 товара <br /> на сумму 3500 Р</div>
+                <div className="header__goods">{items} товара <br /> на сумму {sum} Р</div>
                 <Link to="/trash">
                   <button className="header__button">
                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
