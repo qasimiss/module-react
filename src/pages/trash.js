@@ -2,11 +2,10 @@ import {Link} from "react-router-dom";
 import Cart from "../components/cart/cart";
 import ButtonCircle from "../components/button-circle";
 import Button from "../components/button/button";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Trash() {
-    // const basket = useSelector(state => state.basket.basket)
-    // console.log(basket);
+    const sum = useSelector(state => state.basket.pricesBasket)
     return (
         <div className="trash">
             <div className="container">
@@ -37,7 +36,7 @@ function Trash() {
             <footer className="trash__footer">
                 <div className="container--min">
                     <div className="trash__order">
-                        заказ на сумму: &ensp;<span className="trash__price"> 6 220 ₽</span>
+                        заказ на сумму: &ensp;<span className="trash__price"> {sum} ₽</span>
                     </div>
                     <Button 
                     color="dark"

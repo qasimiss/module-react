@@ -1,7 +1,7 @@
 import "./button-circle.scss"
-const ButtonCircle = ({svg}) => {
+const ButtonCircle = ({svg, onClick}) => {
     return(
-        <button className="button--circle">{svg}</button>
+        <button onClick={onClick} className="button--circle">{svg}</button>
     );
 }
 export default ButtonCircle;

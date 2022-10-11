@@ -2,6 +2,7 @@ import "./cards.scss";
 import CardItem from "../card-item";
 import {products} from "../../services/menu";
 
+
 const Cards = () => {
     return (
         <div className="cards">
@@ -10,6 +11,8 @@ const Cards = () => {
                 return(
                     <CardItem
                     plus = {true}
+                    id = {key.id}
+                    idx = {key.idx}
                     key = {key.id}
                     url = {key.url}
                     title = {key.title}

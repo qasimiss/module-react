@@ -1,15 +1,17 @@
 import "./header.scss";
 import {Link} from "react-router-dom";
 import Button from "../button/button";
+import { useSelector } from "react-redux";
 
 const Header = ({title}) => {
-  const items = 0;
-  const sum = 3500;
+  const items = useSelector(state => state.basket.countProducts)
+  const sum = useSelector(state => state.basket.pricesBasket)
+  let good = (items === 0 || items >= 5) ? "товаров": (items === 1) ? "товар" : "товара"
   return (
         <header className="header">
             <h1 className="header__title">{title}</h1>
             <div className="header__cart">
-                <div className="header__goods">{items} товара <br /> на сумму {sum} Р</div>
+                <div className="header__goods">{items} {good} <br /> на сумму {sum} Р</div>
                 <Link to="/trash">
                   <button className="header__button">
                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">

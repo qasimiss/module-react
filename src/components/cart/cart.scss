@@ -43,6 +43,7 @@
 }
 
 .cart {
+    margin-left: -30px;
     &::-webkit-scrollbar {
         width: 5px;
         &-track {
@@ -55,8 +56,8 @@
             }
         }
       }
-    margin-bottom: 102px;
-    height: 465px;
+    margin-bottom: 65px;
+    height: calc(100vh - 285px);
     overflow-y: scroll;
     & .card {
         padding: 0;
@@ -78,7 +79,7 @@
         }
         &__title {
             min-width: 310px;
-            margin-right: 200px;
+            margin-right: 210px;
         }
         &__footer {
             & .button--circle {

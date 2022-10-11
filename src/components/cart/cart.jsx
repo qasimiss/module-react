@@ -12,6 +12,8 @@ const Cart = () => {
                         return (
                             <CardItem
                             circle = {true}
+                            id = {item.id}
+                            idx = {item.idx}
                             url = {item.url}
                             title = {item.title}
                             price = {item.price}
