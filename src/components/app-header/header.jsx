@@ -2,8 +2,9 @@ import "./header.scss";
 import {Link} from "react-router-dom";
 import Button from "../button/button";
 
-const Header = ({title, items, sum}) => {
-  // let [sum, items] = useBasket()
+const Header = ({title}) => {
+  const items = 0;
+  const sum = 3500;
   return (
         <header className="header">
             <h1 className="header__title">{title}</h1>

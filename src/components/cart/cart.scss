@@ -1,45 +1,5 @@
 .trash {
-    // height: 740px;
-    & .cart {
-        height: 530px;
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        row-gap: 33px;
-        // align-items: space-between;
-        &__item {
-            display: flex;
-            align-items: center;
-            &:hover * {
-                color: #D58C51;
-                cursor: pointer;
-            }
-            & .button--circle {
-                margin-right: 0;}
-        }
-        &__img {
-            width: 132px;
-            height: 132px;
-            margin-right: 98px;
-            // margin-bottom: 33px;
-        }
-        &__title {
-            color:white;
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 21px;
-            margin-right: auto;
-            width: 310px;
-        }
-        &__price {
-            color: white;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-            margin-right: 20px;
-        }
-        
-    } 
+
     &__header {
         display: flex;
         justify-content: space-between;
@@ -79,5 +39,58 @@
         font-size: 18px;
         line-height: 22px;
         color: #D58C51;
+    }
+}
+
+.cart {
+    &::-webkit-scrollbar {
+        width: 5px;
+        &-track {
+            background: black;
+        }
+        &-thumb {
+            background: grey;
+            :hover {
+                background: #D58C51;
+            }
+        }
+      }
+    margin-bottom: 102px;
+    height: 465px;
+    overflow-y: scroll;
+    & .card {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 33px;
+        flex-direction: row;
+        border: none;
+        align-items: center;
+        justify-content: space-between;
+        height: 132px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__img {
+            width: 132px;
+            height: 132px;
+            margin-bottom: 0;
+            margin-right: 88px;
+        }
+        &__title {
+            min-width: 310px;
+            margin-right: 200px;
+        }
+        &__footer {
+            & .button--circle {
+                margin-right: 0;
+            }
+            margin-bottom: 60px;
+        }
+        &__price {
+            min-width: 70px;
+            margin-right: 20px;
+            // display: block;
+            // text-align: center;
+        }
     }
 }

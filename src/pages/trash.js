@@ -2,8 +2,11 @@ import {Link} from "react-router-dom";
 import Cart from "../components/cart/cart";
 import ButtonCircle from "../components/button-circle";
 import Button from "../components/button/button";
+// import { useSelector } from "react-redux";
 
 function Trash() {
+    // const basket = useSelector(state => state.basket.basket)
+    // console.log(basket);
     return (
         <div className="trash">
             <div className="container">
