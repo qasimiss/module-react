@@ -15,7 +15,8 @@ const basketSlice = createSlice({
         },
         removeProductFromBasket(state, action) {
             state.basket = state.basket.filter( item => item.idx !== action.payload)
-            // state.pricesBasket = state.basket.reduce( (sum,current) => sum + current.price, 0)
+            state.pricesBasket = state.basket.reduce( (sum,current) => state.pricesBasket - current.price, state.pricesBasket)
+            state.countProducts = state.basket.length
         }
     }
 })
