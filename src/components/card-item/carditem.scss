@@ -76,6 +76,51 @@
     &:hover {
         color:#D58C51;
         border-color:#D58C51;
+        cursor: pointer;
     }
 }
 
+.about {
+    background-image: url(../../../public/images/content/background.png);
+    background-position: 50% 50%;
+    // background-size: cover; 
+    background-size: 100%;
+    height: 734px;
+    & .header {
+        margin-bottom: 30px;
+    }
+    & .card {
+        &:hover {
+            cursor:auto;
+            color: white;
+        }
+        height: 503px;
+        width: 1230px;
+        border: 0;
+        flex-wrap: wrap;
+        &__img {
+            height: 503px;
+            width: 503px;
+            margin-right: 199px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+            color: #D58C51;
+            margin-top: 58px;
+            margin-bottom: 60px;
+            max-width: 450px;
+        }
+        &__descr {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 50px;
+            max-width: 610px;
+        }
+        &__weight {
+            margin-right: 70px;
+        }
+    }
+}

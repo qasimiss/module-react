@@ -1,14 +1,17 @@
 .trash {
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-    }
+    
     & .container {
         padding-left: 70px;
+        & .header {
+            
+            margin-bottom: 35px;
+
+            & .button {
+                margin-top: 4px;
+            }
+        }
         & .header__title {
             margin-right: 334px;
-            margin-bottom: 38px;
         }
     }
     & .button--circle {

@@ -10,12 +10,12 @@ const basketSlice = createSlice({
     reducers: {
         addProductToBasket(state, action) {
             state.basket.push(action.payload)
-            state.pricesBasket = state.basket.reduce( (sum,current) => sum + current.price, 0)
+            state.pricesBasket = state.basket.reduce( (sum, current) => sum + current.price, 0)
             state.countProducts = state.basket.length
         },
         removeProductFromBasket(state, action) {
             state.basket = state.basket.filter( item => item.idx !== action.payload)
-            state.pricesBasket = state.basket.reduce( (sum,current) => sum + current.price, 0)
+            state.pricesBasket = state.basket.reduce( (sum, current) => sum + current.price, 0)
             state.countProducts = state.basket.length
         }
     }

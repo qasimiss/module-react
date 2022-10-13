@@ -1,4 +1,5 @@
 import "./carditem.scss"
+import Button from "../button/button";
 import ButtonCircle from "../button-circle";
 import { useDispatch } from "react-redux";
 import { addProductToBasket } from "../../store/reducers/basket";
@@ -6,9 +7,10 @@ import { removeProductFromBasket } from "../../store/reducers/basket";
 import {v4 as uuidv4} from "uuid"
 
 
-const CardItem = ({id,idx, url, title, descr, price, weight, circle, plus}) => {
+const CardItem = ({id,idx, url, title, descr, price, weight, circle, plus, gramm, add, handleAbout}) => {
    const dispatch = useDispatch()
-   const addProduct = () => {
+   const addProduct = (event) => {
+    event.stopPropagation()
     const item = {
         id: id,
         idx: uuidv4(),
@@ -18,17 +20,18 @@ const CardItem = ({id,idx, url, title, descr, price, weight, circle, plus}) => {
     }
     dispatch(addProductToBasket(item))
    }
-   const removeProduct = () => {
+   const removeProduct = (event) => {
+    event.stopPropagation()
     dispatch(removeProductFromBasket(idx))
    }
     return(
-        <div className="card">
+        <div className="card" onClick={handleAbout}>
             <img src={url} alt="pizza" className="card__img" />
             <h2 className="card__title">{title}</h2>
             <div className="card__descr">{descr}</div>
             <div className="card__footer">
                 <span className="card__price">{price}&ensp;₽</span>
-                {plus && <span className="card__weight">&ensp;/&ensp;{weight} г.</span>}
+                {(gramm || plus) && <span className="card__weight">&ensp;/&ensp;{weight} г.</span>}
                 {plus && <button onClick={addProduct} className="card__button">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 1.28564V12.3571" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -49,6 +52,7 @@ const CardItem = ({id,idx, url, title, descr, price, weight, circle, plus}) => {
                     </svg>
                     }
                 />}
+                {add && <Button onClick={addProduct} text = "В корзину" color = "light" />}
             </div>
         </div>
     );

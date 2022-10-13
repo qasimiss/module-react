@@ -1,8 +1,8 @@
 import "./button.scss";
 
-const Button = ({color, text}) => {
+const Button = ({color, text, onClick}) => {
     return (
-        <button className={"button button--"+color}>
+        <button onClick={onClick} className={"button button--"+color}>
             {text}
         </button>
     )

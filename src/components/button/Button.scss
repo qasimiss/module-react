@@ -10,10 +10,11 @@
     flex-shrink: 0;
     &--light {
         color: black;
-        background-color: transparent;
+        background-color: #D58C51;
         &:hover {
             cursor: pointer;
-            background-color: #D58C51;
+            color: #D58C51;
+            background-color: transparent;
         }
     }
     &--dark {
