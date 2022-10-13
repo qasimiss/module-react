@@ -1,13 +1,13 @@
 import "./cart.scss";
 import { useSelector } from "react-redux";
 import CardItem from "../card-item";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-    // const navigate = useNavigate()
-    // const handleAbout = (id) => {
-    //     navigate(`about/${id}`)
-    // }
+    const navigate = useNavigate()
+    const handleAbout = (id) => {
+        navigate(`../about/${id}`)
+    }
     const basket = useSelector(state => state.basket.basket)
     return(
         <div className="cart">
@@ -21,7 +21,7 @@ const Cart = () => {
                             url = {item.url}
                             title = {item.title}
                             price = {item.price}
-                            // handleAbout = {() => handleAbout(item.id)}
+                            handleAbout = {() => handleAbout(item.id)}
                             />
                         )
                     })}

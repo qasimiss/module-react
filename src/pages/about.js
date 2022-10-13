@@ -7,7 +7,7 @@ const About = () => {
     const params = useParams()
     let id = params.id
     let {url, title, descr, price, weight} = products[id-1]
-    console.log(id, url, title, descr, price, weight)
+    
     return (
         <div className="about">
             <div className="container">
