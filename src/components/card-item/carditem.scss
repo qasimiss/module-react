@@ -9,7 +9,6 @@
     color: white;
     margin-right: 17px;
     margin-bottom: 35px;
-    // flex: 1 1 312px;
     transition: 0.3s ease;
 
     &__img {
@@ -83,7 +82,6 @@
 .about {
     background-image: url(../../../public/images/content/background.png);
     background-position: 50% 50%;
-    // background-size: cover; 
     background-size: 100%;
     height: 734px;
     & .header {
@@ -119,7 +117,13 @@
             margin-bottom: 50px;
             max-width: 610px;
         }
+        &__price {
+            font-size: 23px;
+            line-height: 28px;
+
+        }
         &__weight {
+            font-size: 18px;
             margin-right: 70px;
         }
     }
