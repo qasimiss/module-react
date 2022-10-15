@@ -3,6 +3,7 @@ import {Link, useNavigate} from "react-router-dom";
 import Button from "../button/button";
 import { useSelector } from "react-redux";
 import ButtonCircle from "../button-circle";
+// import { useEffect } from "react";
 
 const Header = ({title, basket, back}) => {
   const items = useSelector(state => state.basket.countProducts)
@@ -10,6 +11,15 @@ const Header = ({title, basket, back}) => {
   const navigate = useNavigate()
   let good = (items === 0 || items >= 5) ? "товаров": (items === 1) ? "товар" : "товара"
 
+  let exit = () => {
+    localStorage.removeItem("auth");
+
+    if (!localStorage.getItem("auth")) {
+      setTimeout(() => {
+        navigate("/auth")
+    }, 1000)
+  }
+}
   return (
         <header className="header">
             {back && 
@@ -37,7 +47,8 @@ const Header = ({title, basket, back}) => {
                   </button>
                 </Link>}
                 <Link to="/">
-                  <Button 
+                  <Button
+                      onClick = {exit}
                       color="dark"
                       text="Выйти"
                   />
