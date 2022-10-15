@@ -6,7 +6,6 @@ import store from './store';
 import App from './components/app/app';
 import './index.scss';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
