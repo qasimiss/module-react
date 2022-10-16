@@ -6,7 +6,7 @@ const basketSlice = createSlice({
         basket: [],
         countProducts: 0,
         pricesBasket: 0,
-        users: {},
+        // users: {},
     },
     reducers: {
         addProductToBasket(state, action) {
