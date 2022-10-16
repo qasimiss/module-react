@@ -1,0 +1,98 @@
+.trash {
+    
+    & .container {
+        padding-left: 70px;
+        & .header {
+            
+            margin-bottom: 35px;
+
+            & .button {
+                margin-top: 4px;
+            }
+        }
+        & .header__title {
+            margin-right: 334px;
+        }
+    }
+    & .button--circle {
+        margin-right: 63px;
+    }
+    &__footer {
+        height: 89px;
+        border-top: 1px solid #D58C51;
+        & .container--min {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 89px;
+        }
+    }
+
+    &__order {
+        color: white;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #D58C51;
+    }
+}
+
+.cart {
+    margin-left: -30px;
+    &::-webkit-scrollbar {
+        width: 5px;
+        &-track {
+            background: black;
+        }
+        &-thumb {
+            background: grey;
+            :hover {
+                background: #D58C51;
+            }
+        }
+      }
+    margin-bottom: 65px;
+    height: calc(100vh - 285px);
+    overflow-y: scroll;
+    & .card {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 33px;
+        flex-direction: row;
+        border: none;
+        align-items: center;
+        justify-content: space-between;
+        height: 132px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__img {
+            width: 132px;
+            height: 132px;
+            margin-bottom: 0;
+            margin-right: 88px;
+        }
+        &__title {
+            min-width: 310px;
+            margin-right: 210px;
+        }
+        &__footer {
+            & .button--circle {
+                margin-right: 0;
+            }
+            margin-bottom: 60px;
+        }
+        &__price {
+            min-width: 70px;
+            margin-right: 20px;
+        }
+    }
+}

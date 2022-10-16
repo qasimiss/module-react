@@ -1,0 +1,131 @@
+.card {
+    flex-direction: column;
+    display: flex;
+    width: 312px;
+    height: 552px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 43px 21px 32px 21px;
+    color: white;
+    margin-right: 17px;
+    margin-bottom: 35px;
+    transition: 0.3s ease;
+
+    &__img {
+        width: 270px;
+        height: 271px;
+        margin-bottom: 31px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 9px;
+        max-height: 42px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 24px;
+        max-height: 68px;
+    }
+
+    &__footer {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    
+    &__weight {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid white;
+        margin-left: auto;
+        margin-right: 6px;
+        position: relative;
+        transition: 0.3s ease;
+        & svg {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover {
+            background-color: #D58C51;
+            border-color:#D58C51;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        color:#D58C51;
+        border-color:#D58C51;
+        cursor: pointer;
+    }
+}
+
+.about {
+    background-image: url(../../../public/images/content/background.png);
+    background-position: 50% 50%;
+    background-size: 100%;
+    height: 734px;
+    min-height: 734px;
+    & .header {
+        margin-bottom: 30px;
+    }
+    & .card {
+        &:hover {
+            cursor:auto;
+            color: white;
+        }
+        height: 503px;
+        width: 1230px;
+        border: 0;
+        flex-wrap: wrap;
+        &__img {
+            height: 503px;
+            width: 503px;
+            margin-right: 199px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+            color: #D58C51;
+            margin-top: 58px;
+            margin-bottom: 60px;
+            max-width: 450px;
+        }
+        &__descr {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 50px;
+            max-width: 610px;
+        }
+        &__price {
+            font-size: 23px;
+            line-height: 28px;
+
+        }
+        &__weight {
+            font-size: 18px;
+            margin-right: 70px;
+        }
+    }
+}

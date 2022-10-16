@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 51px 40px 0 70px;
+    &--min {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+}
+.notFound {
+    background-color: red;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
