@@ -18,7 +18,7 @@ const Cart = () => {
                             circle
                             id={item.id}
                             idx={item.idx}
-                            url={{item.url}}
+                            url={item.url}
                             title={item.title}
                             price={item.price}
                             handleAbout={() => handleAbout(item.id)}
